@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Número #3</title>
+    <link rel="stylesheet" href="practica3.css">
+</head>
+<script>
+    function cambiarBoton(){
+        var btn =document.getElementById("tipo-cuack");
+        var parrafo =document.getElementById("mensaje");
+
+        btn.style.background = "yellow";
+        btn.value = "Le haz sobado la pancita, ta felih :3";
+    }
+</script>
+<body>
+    <nav class="navbar">
+        <picture class="logo">
+            <img src="/img/7498cf5b44c7b9a14f3db7ab5e10812b.jpg" alt="Logo de patito">
+        </picture>
+        <div class="menu">
+            <a href="#">Cuack!</a>
+            <a href="#">Cuack!</a>
+            <a href="#">Cuack!</a>           
+            <a href="#">Cuack!</a>
+            <a href="#">Cuack!</a>
+            <a href="#">Cuack!</a>
+            <a href="#">Cuack!</a>
+        </div>
+    </nav>
+    <main>
+        <div class="banner">
+            <div class="contenido-banner">
+                <picture class="imagen-banner">
+                    <img src="/img/patoorgulloso.jpg" alt="">
+                </picture>
+                <div class="texto-banner">
+                    <header>
+                        <h2 id="titulo">Cuidado con este pato </h2>
+                    </header>
+                    <main>
+                        <p id="mensaje">Pato peligroso, sabe que le observas y no le gusta eso DDDDD;</p>
+                    </main>
+                    <footer>
+                        <input type="submit" onclick="cambiarBoton()" id="tipo-cuack">cuack cuack enojado!!!! >:CC </input>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

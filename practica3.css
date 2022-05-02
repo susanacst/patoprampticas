@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 85px;
+    justify-content: flex-end;
+    background-color: wheat;
+}
+.navbar picture{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar picture img{
+    height: 85px;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    bottom: 2px;
+    border-radius: 85%;
+}
+.navbar .menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar .menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color:brown;
+    margin: 10px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.banner .contenido-banner{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+.banner .contenido-banner .imagen-banner{
+    display:flex;
+    justify-content: center;
+}
+.banner .contenido-banner .imagen-banner img{
+    height: 400px;
+}
+.banner .contenido-banner .texto-banner {
+    padding-top:15% ;
+}
+.banner .contenido-banner .texto-banner #mensaje{
+    margin-top: 5% ;
+}
+.banner .contenido-banner .texto-banner #tipo-cuack{
+    margin-top: 2% ;
+    padding: 5px 15px;
+    position: fixed;
+    background-color: rgb(212, 127, 127);
+    border-radius: 5px;
+    color: rgb(51, 29, 29);
+    font-weight: bold;
+}
+
+
