@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function enviarMensaje(){
+        if(document.getElementById("txtMensaje").value==""){
+            alert("Favor de escribir un mensaje");
+            document.getElementById("txtMensaje").focus();
+        }
+        else{
+            var mensaje = document.getElementById("txtMensaje").value;
+            var token = "5261392491:AAGeXsDJXRae89MfIBARiHNiLQJlv4OJVn0";
+            var chat_id = "1355704401"
+            var url = 'https://api.telegram.org/bot'+token+'/sendMessage?chat_id='+chat_id+'&text=' + mensaje; 
+            let api = new XMLHttpRequest();
+            api.open("GET" , url , true);
+            api.send();
+        }
+    }
+</script>
+<body>
+    <div style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+        <label for="txtMensaje">Mensaje: </label>
+        <textarea name="mensaje" id="txtMensaje" cols="30" rows="10"></textarea>
+        <input type="submit" onclick="enviarMensaje()">
+    </div>
+</body>
+</html>

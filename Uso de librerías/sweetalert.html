@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Esto se le conoce como linkear una librería -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Esta librería utiliza JS, por lo cual no tendrás mucho problema! -->
+</head>
+<script>
+    function alertFeo(){
+        alert("Hola, soy un alert feo:c");
+    }
+    function alertBonito(){
+        swal("Hola, soy la librería que te encantará");
+    }
+</script>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <input type="submit" value="Click para un alert aburrido:(" onclick="alertFeo()">
+        <input type="submit" value="Click para un alert personalizado y bonito:3" onclick="alertBonito()">
+        <a href="https://sweetalert.js.org/guides/" target="_blank">Consulta más sobre la librería, hay muchos ejemplos!</a>
+    </div>
+</body>
+</html>
