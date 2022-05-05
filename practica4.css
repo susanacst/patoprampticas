@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: black;
+}
+nav .nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .nav-logo img{
+    width: 10%;
+}
+nav .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .nav-menu a{
+    margin: 15px 35px 15px;
+    text-decoration: none;
+    color: rgb(243, 243, 124);
+}
+nav .nav-menu a:hover{
+    color: rgb(220, 230, 222);
+    transition: all 0.7s ease;
+    text-transform:uppercase;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
+}
+.contenedor .imagen{
+    display: flex;
+    justify-content: center;
+}
+.contenedor .imagen img{
+    width: 65%;
+    height: 5%;
+    margin-top: 5%;
+    border: rgb(10, 10, 10) 2px solid;
+}
+.contenedor .texto{
+    padding: 5%;
+}
+.contenedor .texto #btn-adorable{
+    text-decoration: none;
+    padding: 15px 25px 15px;
+    background-color: rgb(243, 243, 124);
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    border: rgb(10, 10, 10) 2px solid;
+}
+.contenedor .texto #btn-adorable:hover{
+    background-color: black;
+    color: rgb(243, 243, 124);
+    border: rgb(243, 243, 124) 2px solid;
+    transition: all 0.7s ease;
+}
+.banner-abajo-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-abajo-contenedor .banner-abajo{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: rgb(243, 243, 124);
+}
+.banner-abajo-contenedor .banner-abajo .patito{
+  margin: 5px;
+}
+.banner-abajo-contenedor .banner-abajo .patito img{
+    width: 100%;
+    border: rgb(10, 10, 10) 2px solid;
+}
+
