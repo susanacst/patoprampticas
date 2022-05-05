@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Archivos esenciales -->
+    <link rel="stylesheet" href="../Assets/animate.css">
+</head>
+<style>
+    .textanimado{ /*De esta manera sería con CSS*/
+        animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+    }
+</style>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <!-- Esta es una manera de hacer una animación, usando el class -->
+        <h1 class="animate__animated animate__bounce">¡Bienvenidos!</h1>
+
+        <!-- Peeero, qué pasaría, si la etiqueta ya tiene una "class" con nombre? Usamos CSS! -->
+        <h1 class="textanimado">¡Bienvenidos, con class asignado!</h1>
+
+        <br>
+        <a href="https://animate.style/" target="_blank">Consulta la librería aquí!</a>
+    </div>
+</body>
+</html>
